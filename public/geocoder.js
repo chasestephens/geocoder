@@ -59,8 +59,8 @@ Geocoder.prototype.createNewAddress = function (response) {
     search: this.search,
     address: a.matchedAddress,
     coordinates: {
-      lat: a.coordinates.x,
-      lng: a.coordinates.y
+      lat: a.coordinates.y,
+      lng: a.coordinates.x
     }
   }
 
@@ -78,8 +78,8 @@ Geocoder.prototype.addPoint = function (address) {
     geometry: {
         type: 'Point',
         coordinates: [
-          address.coordinates.lat,
-          address.coordinates.lng 
+          address.coordinates.lng,
+          address.coordinates.lat 
         ]
     },
     properties: {
